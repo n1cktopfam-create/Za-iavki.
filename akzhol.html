@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реклама специалиста</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 35px;
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00d4ff;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 { margin-bottom: 5px; color: #00d4ff; font-size: 24px; }
+        .subtitle { color: #aaa; font-size: 14px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        p { margin-bottom: 25px; font-size: 16px; line-height: 1.5; }
+
+        .contact-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            background: #00d4ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .contact-btn:hover { background: #0099cc; transform: translateY(-3px); }
+
+        .small-text { font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Сюда можно вставить фото человека -->
+        <img src="https://via.placeholder.com/100" alt="Profile" class="profile-img">
+        
+        <h1>Ақжол Жанболат</h1>
+        <div class="subtitle">Дрочер / Програмист / ГПТ монстр</div>
+        
+        <p>Краткое описание
+        Играет любую игру
+        хороший мальчик 
+        печеньку любит.</p>
+        
+        <a href="https://t.me/Use1ezz" class="contact-btn">Написать в Telegram</a>
+        <a href="https://wa.me/77000000000" class="contact-btn" style="background: #25d366;">Написать в WhatsApp</a>
+        
+        <div class="small-text">Нажмите на кнопку, чтобы связаться напрямую</div>
+    </div>
+</body>
+</html>
